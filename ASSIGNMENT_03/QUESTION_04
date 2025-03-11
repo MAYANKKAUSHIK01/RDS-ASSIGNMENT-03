@@ -1,0 +1,25 @@
+#4. Create a 3×4 matrix from a given logical vector and display the result. Then, create another 3×4 numeric matrix
+# and perform an element-wise comparison between them.
+
+log_matrix <- matrix(rep(c(TRUE, FALSE), length.out = 12), nrow = 3, ncol = 4)
+num_matrix <- matrix(1:12, nrow = 3, ncol = 4)
+comparison <- log_matrix == num_matrix
+print(log_matrix)
+print(num_matrix)
+print(comparison)
+
+#OUTPUT
+#      [,1]  [,2]  [,3]  [,4]
+#[1,]  TRUE FALSE  TRUE FALSE
+#[2,]  TRUE FALSE  TRUE FALSE
+#[3,]  TRUE FALSE  TRUE FALSE
+
+#      [,1] [,2] [,3] [,4]
+#[1,]    1    4    7   10
+#[2,]    2    5    8   11
+#[3,]    3    6    9   12
+
+ #     [,1]  [,2]  [,3]  [,4]
+#[1,] FALSE FALSE FALSE FALSE
+#[2,] FALSE FALSE FALSE FALSE
+#[3,] FALSE FALSE FALSE FALSE

@@ -1,0 +1,12 @@
+#15. Write a function that takes a numeric vector and bins the data into three categories: "Low", "Medium", and "High".
+#Use the cut() function and return the resulting factor.
+
+bin_data <- function(vec) {
+  cut(vec, breaks = c(-Inf, 10, 20, Inf), labels = c("Low", "Medium", "High"))
+}
+vec <- c(5, 15, 25, 8, 18)
+print(bin_data(vec))
+
+#OUTPUT
+#[1] Low    Medium High   Low    Medium
+#Levels: Low Medium High

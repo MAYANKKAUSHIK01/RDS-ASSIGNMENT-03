@@ -1,0 +1,10 @@
+#14. Given a factor vector of genders (e.g., gender <- factor(c("male", "female", "female", "male", "female"))), write R
+#code to extract only the entries corresponding to "female".
+
+gender_factor <- factor(c("male", "female", "female", "male", "female"))
+females <- gender_factor[gender_factor == "female"]
+print(females)
+
+#OUTPUT
+#[1] female female female
+#Levels: female male

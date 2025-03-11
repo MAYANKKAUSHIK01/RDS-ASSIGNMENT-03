@@ -1,0 +1,12 @@
+#11. Given the string "apple, apple, and apple", write R code that uses sub() to replace only the first occurrence of
+#"apple" with "orange", and gsub() to replace all occurrences.
+
+str1 <- "apple, apple, and apple"
+sub_result <- sub("apple", "orange", str1)
+gsub_result <- gsub("apple", "orange", str1)
+print(sub_result)
+print(gsub_result)
+
+#OUTPUT
+#[1] "orange, apple, and apple"
+#[1] "orange, orange, and orange"

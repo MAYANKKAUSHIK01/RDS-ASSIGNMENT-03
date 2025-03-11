@@ -1,0 +1,22 @@
+#17. Given two logical vectors, write R code to perform element-wise logical AND, OR, and NOT operations. Print the
+#results.
+
+log_vec1 <- c(TRUE, FALSE, TRUE, FALSE)
+log_vec2 <- c(FALSE, FALSE, TRUE, TRUE)
+
+# Element-wise operations
+and_result <- log_vec1 & log_vec2
+or_result <- log_vec1 | log_vec2
+not_result1 <- !log_vec1
+not_result2 <- !log_vec2
+
+print(and_result)
+print(or_result)
+print(not_result1)
+print(not_result2)
+
+#OUTPUT
+#[1] FALSE FALSE  TRUE FALSE
+#[1]  TRUE FALSE  TRUE  TRUE
+#[1] FALSE  TRUE FALSE  TRUE
+#[1]  TRUE  TRUE FALSE FALSE

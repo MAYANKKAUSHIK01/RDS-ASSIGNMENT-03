@@ -1,0 +1,10 @@
+#5. Demonstrate vector recycling by creating one vector of length 4 and another of length 10, then perform an addition
+#operation. Print the resulting vector.
+
+vec_a <- c(1, 2, 3, 4)
+vec_b <- 1:10
+result <- vec_a + vec_b
+print(result)
+
+#OUTPUT
+#[1]  2  4  6  8  6  8 10 12 10 12

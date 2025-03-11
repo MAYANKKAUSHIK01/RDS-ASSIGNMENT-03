@@ -1,0 +1,14 @@
+#16. Create a logical vector and demonstrate the use of the any() and all() functions. Explain, via comments, a scenario
+#where any() returns TRUE but all() returns FALSE.
+
+log_vec <- c(TRUE, FALSE, FALSE, TRUE)
+
+# any() returns TRUE if at least one element is TRUE
+print(any(log_vec)) 
+
+# all() returns TRUE only if all elements are TRUE
+print(all(log_vec))
+
+#OUTPUT
+#[1] TRUE
+#[1] FALSE
